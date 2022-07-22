@@ -42,7 +42,7 @@ export default function Example() {
         <div className="w-full h-2/3 flex flex-col sm:flex-row">
         <div className="flex-1 w-full  ">
         <div className="px-4 py-12 sm:py-16 lg:w-full sm:px-8 ">
-            <h1 className="tracking-tighter sm:leading-[6rem] mb-24 sm:mb-48 font-bold text-white text-7xl sm:text-8xl">
+            <h1 className="tracking-tighter uppercase sm:leading-[6rem] mb-24 sm:mb-48 font-bold text-white text-7xl sm:text-8xl">
               Invest with <span className="block">Nous.</span> 
             </h1>
             

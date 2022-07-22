@@ -38,7 +38,7 @@ export default function Example() {
       
 
       <main className="sm:relative ">
-        <div className="max-w-7xl w-full  relative bg-stone-100  text-left lg:text-left">
+        <div className="max-w-7xl w-full  relative bg-white text-left lg:text-left">
                  
           <div className="px-4 py-16  lg:w-3/5 sm:px-8 ">
             <h1 className="tracking-tighter  leading-[4rem] font-semibold text-stone-800 text-8xl mb-8">

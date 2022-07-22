@@ -26,7 +26,7 @@ import {
 import logo from '../../public/images/logo.svg'
 import navbarlogo from '../../public/images/navbarlogo.svg'
 import marketplace from '../../public/images/marketplace.jpg'
-import bonds from '../../public/images/bonds.jpg'
+import bonds from '../../public/images/bondshero.jpg'
 
 
 
@@ -77,12 +77,12 @@ export default function Example() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-screen">
           
           <div className="absolute inset-0 w-full h-full bg-cyan-500 object-cover">
-          {/* <Image
+          <Image
             layout="fill"
             objectFit="cover"
             src={bonds}
             alt=""
-          /> */}
+          />
           </div>
         </div>
       </main>

@@ -23,7 +23,7 @@ const products = [
     price: 'NOUS allows investors to mint investment contracts as NFTs - creating an immutable proof of ownership over an investment and its terms.',
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: '',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +33,7 @@ const products = [
     price: 'Monitor the performance of your investments in real-time. Powered by Chainlink, NOUS leverages the latest in on-chain infrastructure to provide decentralised reporting on investments and their performance.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc: '',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -43,7 +43,7 @@ const products = [
     price: 'Select a Rewards Period when you mint and receive dividends on your investments, paid out in USDT/USDC.',
     rating: 5,
     reviewCount: 14,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg',
+    imageSrc: '',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -53,7 +53,7 @@ const products = [
     price: 'Buy and sell NFT investments on the NOUS Market to access liquidity and profit from secondary sales.',
     rating: 4,
     reviewCount: 21,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-04.jpg',
+    imageSrc: '',
     imageAlt: 'TODO',
     href: '#',
   },
@@ -77,12 +77,12 @@ export default function Example() {
           
         </div>
       </div>
-      <div className="w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto overflow-hidden">
         <h2 className="sr-only">Products</h2>
 
-        <div className="-mx-px border-l border-gray-200 grid grid-cols-1 sm:grid-cols-2 sm:mx-0 ">
+        <div className="-mx-px  grid grid-cols-1 sm:grid-cols-2 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 border-r border-b border-gray-200">
+            <div key={product.id} className="group relative px-8  border-gray-200">
               <div className="overflow-hidden  bg-gray-200 aspect-w-1 aspect-h-1 group-hover:opacity-75">
                 <img
                   src={product.imageSrc}

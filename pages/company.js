@@ -12,7 +12,7 @@ export default function Home() {
     <CompanyStory/>
     <CompanyPress/>
     <CompanyBlog/>
-    <CompanyTeam/>
+    <CompanyTeam/>x
     <Footer/>
     </>
   )

@@ -25,7 +25,7 @@ import {
 import logo from '../../public/images/logo.svg'
 import navbarlogo from '../../public/images/navbarlogo.svg'
 import marketplace from '../../public/images/marketplace.jpg'
-import funds from '../../public/images/funds2.jpg'
+import funds from '../../public/images/fundshero.webp'
 
 
 function classNames(...classes) {
@@ -75,12 +75,12 @@ export default function Example() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full bg-neutral-500 object-cover">
-          {/* <Image
+          <Image
             layout="fill"
             objectFit="cover"
-            src={bonds}
+            src={funds}
             alt=""
-          /> */}
+          /> 
           </div>
         </div>
       </main>

@@ -24,7 +24,7 @@ import {
   import { ChevronDownIcon } from '@heroicons/react/solid'
 import logo from '../../public/images/logo.svg'
 import navbarlogo from '../../public/images/navbarlogo.svg'
-import ventures from '../../public/images/ventures.jpg'
+import ventures from '../../public/images/ventureshero.jpg'
 import bonds from '../../public/images/bonds.jpg'
 
 
@@ -42,12 +42,12 @@ export default function Example() {
         <div className="w-full h-2/3 flex flex-col sm:flex-row">
             <div className="flex-1 w-full">
             <div className=" relative w-full h-full bg-black object-contain">
-          {/* /* <Image
+           <Image
             layout="fill"
             objectFit="cover"
-            src={bonds}
+            src={ventures}
             alt=""
-          />  */}
+          /> 
           </div>
         </div>
         <div className="flex-1 w-full  ">
