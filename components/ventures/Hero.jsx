@@ -29,6 +29,7 @@ import hero from '../../public/images/hero.jpg'
 import nous from '../../public/images/nous.svg'
 import polygon from '../../public/images/polygon.svg'
 import bond from '../../public/images/bond.jpg'
+import invest from '../../public/images/invest.jpg'
 
 const solutions = [
     {
@@ -51,7 +52,7 @@ const solutions = [
     {
       name: 'How it works',
       description: 'A pioneering use case for NFTs',
-      href: '#',
+      href: 'how-it-works',
       icon: ChartBarIcon,
     },
     {
@@ -427,7 +428,7 @@ export default function Example() {
            <Image
             layout="fill"
             objectFit="cover"
-            src={bond}
+            src={invest}
             alt=""
           /> 
           </div>

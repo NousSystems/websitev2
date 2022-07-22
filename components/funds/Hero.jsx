@@ -51,13 +51,13 @@ const solutions = [
     {
       name: 'How it works',
       description: 'A pioneering use case for NFTs',
-      href: '#',
+      href: 'how-it-works',
       icon: ChartBarIcon,
     },
     {
       name: 'Company',
       description: 'Find out more about the team building Nous.',
-      href: '#',
+      href: 'commpany',
       icon: CursorClickIcon,
     },
     { name: 'Docs', description: "Read our whitepaper and project documentation.", href: '#', icon: ShieldCheckIcon },

@@ -27,6 +27,7 @@ import navbarlogo from '../../public/images/navbarlogo.svg'
 import hero from '../../public/images/hero.jpg'
 import nous from '../../public/images/nous.svg'
 import polygon from '../../public/images/polygon.svg'
+import bull from '../../public/images/bull.jpg'
 
 const solutions = [
     {
@@ -49,13 +50,13 @@ const solutions = [
     {
       name: 'How it works',
       description: 'A pioneering use case for NFTs',
-      href: '#',
+      href: 'how-it-works',
       icon: ChartBarIcon,
     },
     {
       name: 'Company',
       description: 'Find out more about the team building Nous.',
-      href: '#',
+      href: 'company',
       icon: CursorClickIcon,
     },
     { name: 'Docs', description: "Read our whitepaper and project documentation.", href: '#', icon: ShieldCheckIcon },
@@ -395,13 +396,13 @@ export default function Example() {
                 </div>
                 
             </div>
-            <h1 className="tracking-tighter leading-[5.5rem] sm:leading-[6.5rem] font-bold text-white text-8xl sm:text-9xl mb-8">
-              <span className="block xl:inline">Invest with</span>{' '}
+            <h1 className="tracking-tight uppercase leading-[5rem] sm:leading-[5.5rem] font-bold text-white text-7xl sm:text-8xl mb-8">
+              <span className="block xl:inline text-neutral-300">Invest with</span>{' '}
               <span className="block  ">the best.</span>
      
             </h1>
-            <p className="mt-3 max-w-md font-regular  text-lg text-neutral-100 opacity-80 sm:text-2xl md:mt-5 md:max-w-lg">
-              Access the <span className="text-green-300">best investment opportunities</span> in crypto, DeFi and Web3 from as little as $100.
+            <p className="mt-3 w-5/6 font-regular  text-xl text-white  sm:text-2xl md:mt-5 md:max-w-lg">
+              Access the <span className="text-green-500">best investment opportunities</span> in crypto, DeFi and Web3 from as little as $100.
             </p>
            
             <div className=" sm:flex sm:justify-start mt-24 sm:mt-40 mb-8 lg:justify-start">
@@ -424,15 +425,15 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="relative w-full h-96 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
-          <div className="absolute inset-0 w-full h-full bg-green-400 toobject-cover ">
-          {/* <Image
+          <div className="absolute inset-0 w-full h-full object-contain ">
+          <Image
             layout="fill"
             objectFit="cover"
-            src={hero}
+            src={bull}
             alt=""
-          /> */}
+          />
           </div>
         </div>
       </main>
