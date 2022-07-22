@@ -43,7 +43,7 @@ export default function Example() {
         <div className="flex-1 w-full  ">
         <div className="px-4 py-4 sm:py-8 lg:w-full sm:px-8 ">
             <h1 className="tracking-tight uppercase  mb-24 sm:mb-48 font-semibold text-black  sm:text-2xl">
-              WHAT'S NEEDED<span className="block">TO GET STARTED?</span> 
+              WHAT&apos;S NEEDED<span className="block">TO GET STARTED?</span> 
             </h1>
             
             <div className=" justify-center w-2/3 ">

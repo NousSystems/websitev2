@@ -405,7 +405,7 @@ export default function Example() {
      
             </h1>
             <p className="mt-3 max-w-md font-regular  text-lg text-black opacity-80 sm:text-xl md:mt-12 md:max-w-lg">
-              We believe non-fungible contracts are the future of finance and investing. <span className="text-green-600">Find out how we're bringing next-gen financial utility to NFTs.</span>
+              We believe non-fungible contracts are the future of finance and investing. <span className="text-green-600">Find out how we&apos;re bringing next-gen financial utility to NFTs.</span>
             </p>
            
             <div className=" sm:flex sm:justify-start sm:mt-8 mt-8 w-full lg:justify-start">
