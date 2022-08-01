@@ -28,7 +28,7 @@ import navbarlogo from '../../public/images/navbarlogo.svg'
 import hero from '../../public/images/hero.jpg'
 import nous from '../../public/images/nous.svg'
 import polygon from '../../public/images/polygon.svg'
-import bond from '../../public/images/bond.png'
+import bond from '../../public/images/bond3.png'
 
 const solutions = [
     {
@@ -424,7 +424,7 @@ export default function Example() {
         <div className="hidden sm:block relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute p-16 inset-0 w-full h-full bg-black object-cover ">
-           <div className="relative mt-24 p-60">
+           <div className="relative mt-24 p-96">
            <Image
             layout="fill"
             objectFit="contain"

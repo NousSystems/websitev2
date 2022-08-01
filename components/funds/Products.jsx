@@ -15,6 +15,9 @@
   ```
 */
 import { StarIcon } from '@heroicons/react/solid'
+import Image from 'next/image'
+import profit from '../../public/images/laptop.gif'
+import tested from '../../public/images/online-security.gif'
 
 const products = [
   {
@@ -23,7 +26,7 @@ const products = [
     price: "Exposure to crypto assets without the risk. Nous A1 arbitrages with stablecoins, exploiting funding rate dislocation across all major exchanges.",
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: profit,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +36,7 @@ const products = [
     price: 'Nous A1 has been backtested over 2 years, undergone live testing and risk analysis. Download the full product prospectus below.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc: tested,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -64,12 +67,15 @@ export default function Example() {
         <div className="-mx-px  grid grid-cols-1 sm:grid-cols-2 sm:mx-0 ">
           {products.map((product) => (
             <div key={product.id} className="group relative px-8 ">
-              <div className="overflow-hidden  bg-black aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                <img
+              <div className="overflow-hidden  bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className="object-center mx-auto object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
+                  height={200}
+                  width={200}
                 />
+                </div>
               </div>
               <div className="pt-10 pb-4 text-left">
                 <h3 className="text-4xl uppercase font-bold text-purple-500">
