@@ -28,7 +28,7 @@ import navbarlogo from '../../public/images/navbarlogo.svg'
 import hero from '../../public/images/hero.jpg'
 import nous from '../../public/images/nous.svg'
 import polygon from '../../public/images/polygon.svg'
-import bond from '../../public/images/bond.jpg'
+import bond from '../../public/images/bond.png'
 
 const solutions = [
     {
@@ -279,11 +279,11 @@ export default function Example() {
             </Popover.Group>
             <div className="flex items-center md:ml-12">
               <a href="token" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                $NOUS
+                $NOUS TOKEN
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center uppercase justify-center px-4 py-4  border border-transparent shadow-sm text-base font-medium text-white bg-cyan-500 hover:bg-emerald-500"
+                className="ml-8 inline-flex items-center uppercase justify-center px-4 py-4  border border-transparent shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-emerald-500"
               >
                 Launch App
               </a>
@@ -401,7 +401,7 @@ export default function Example() {
             </div>
             <h1 className="tracking-tighter leading-[5.5rem] sm:leading-[6.5rem] font-bold text-white text-8xl sm:text-9xl mb-8">
               <span className="block xl:inline">Bonds are </span>{' '}
-              <span className="block text-cyan-400 "><span className="text-white">not </span>boring.</span>
+              <span className="block text-blue-500 "><span className="text-white">not </span>boring.</span>
      
             </h1>
             <p className="mt-3 max-w-md font-regular  text-lg text-neutral-100 opacity-80 sm:text-2xl md:mt-12 md:max-w-lg">
@@ -423,13 +423,16 @@ export default function Example() {
         </div>
         <div className="relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
-          <div className="absolute inset-0 w-full h-full bg-cyan-400 toobject-cover ">
+          <div className="absolute p-16 inset-0 w-full h-full bg-black object-cover ">
+           <div className="relative mt-24 p-60">
            <Image
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             src={bond}
             alt=""
           /> 
+           </div>
+           
           </div>
         </div>
       </main>

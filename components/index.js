@@ -9,6 +9,7 @@ export {default as Indexes} from '../components/landing/Indexes'
 export {default as Features} from '../components/landing/Features'
 export {default as Testimonials} from '../components/landing/Testimonials'
 export {default as Footer} from '../components/landing/Footer'
+export {default as Verticals} from '../components/landing/Verticals'
 
 //Bonds
 export {default as BondsHero} from '../components/bonds/Hero'

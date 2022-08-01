@@ -387,7 +387,7 @@ export default function Example() {
       <main className="sm:relative relative ">
         <div className=" w-full h-screen bg-white  text-left lg:text-left">
                  
-          <div className="px-4 py-8 lg:w-1/2 sm:px-8 ">
+          <div className="px-4 sm:py-8 lg:w-1/2 sm:px-8 ">
             <div className="flex hidden float-left sm:float-right w-max mr-24 sm:mr-0 sm:ml-24 top-0 mb-6  px-2  py-2">
                 {/* <h1 className="flex my-auto font-semibold mr-4  text-black text-3xl " >Built on Polygon</h1> */}
                 <Image height={60} width={60} src={nous}/>
@@ -399,20 +399,20 @@ export default function Example() {
                 </div>
                 
             </div>
-            <h1 className="tracking-tighter leading-[5.5rem] sm:leading-[6.5rem] font-bold text-black text-8xl sm:text-9xl mb-8">
-              <span className="block xl:inline">Funds <span className="block">for the</span></span>{' '}
+            <h1 className="tracking-tighter leading-[4rem] sm:leading-[6.5rem] font-bold text-black text-7xl sm:text-9xl mb-8">
+              <span className="block xl:inline">Funds <span className="inline sm:block">for the</span></span>{' '}
               <span className="block text-purple-600 "><span className="text-white"></span>people.</span>
      
             </h1>
-            <p className="mt-3 max-w-md font-regular  text-lg text-black opacity-80 sm:text-2xl md:mt-12 md:max-w-lg">
+            <p className="mt-2 max-w-md font-regular  text-xl text-black opacity-80 sm:text-2xl md:mt-12 md:max-w-lg">
               Invest in a range of trading funds and strategies<span className="text-purple-600"> built by industry experts</span>  from as little as $100.
             </p>
            
-            <div className=" sm:flex sm:justify-start  w-full lg:justify-start">
-              <div className="absolute bottom-16">
+            <div className="  w-full ">
+              <div className="pt-80 sm:pt-28 ">
                 <a
                   href="#"
-                  className="w-full flex items-center uppercase justify-center px-10 py-4 border border-transparent text-base font-medium  text-black border-2 border-black hover:bg-green-200 md:py-4 md:text-lg md:px-64"
+                  className="w-full flex items-center uppercase justify-center px-10 py-3 border border-transparent text-base font-medium  text-black border-2 border-black hover:bg-purple-200 md:py-4 md:text-lg md:px-64"
                 >
                   EXPLORE FUNDS
                 </a>

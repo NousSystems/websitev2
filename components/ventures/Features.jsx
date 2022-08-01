@@ -15,6 +15,11 @@
   ```
 */
 import { StarIcon } from '@heroicons/react/solid'
+import Image from 'next/image'
+import rewards from '../../public/images/award.gif'
+import sunrise from '../../public/images/sunrise.gif'
+import tokens from '../../public/images/money-flow.gif'
+
 
 const products = [
   {
@@ -23,7 +28,7 @@ const products = [
     price: "Every project offering a Venture NFT must provide rewards for their investors. Visit a project's listing page to see what rewards they are offering.",
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: rewards,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +38,7 @@ const products = [
     price: 'Holders of Venture NFTs will be able to access premium features, future rewards and other opportunities from a project prior to public access.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc: sunrise,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -43,7 +48,7 @@ const products = [
     price: 'Project tokens will be distributed to holders of Venture NFTs when a project token is launched.',
     rating: 5,
     reviewCount: 14,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg',
+    imageSrc: tokens,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -59,7 +64,7 @@ export default function Example() {
   return (
       
     <div className="bg-green-500 flex flex-col sm:flex-row">
-        <div className="max-w-7xl w-1/3 sm:flex mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="max-w-7xl sm:w-1/3 sm:flex mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-left ">
           
           <p className="mt-1  sm:ml-4 text-5xl font-extrabold uppercase  text-green-600 sm:text-5xl sm:tracking-tight lg:text-7xl">
@@ -85,15 +90,18 @@ export default function Example() {
 
         <div className="-mx-px  bg-white grid grid-cols-1 sm:grid-cols-3 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 ">
-              <div className="overflow-hidden  bg-gray-200 aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                <img
+            <div key={product.id} className="group pt-8 sm:pt-28 relative px-8 ">
+              <div className="overflow-hidden  bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className=" object-center object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
+                  height={120}
+                  width={120}
                 />
+                </div>
               </div>
-              <div className="pt-10 pb-4 text-left">
+              <div className="pt-4 pb-4 text-left">
                 <h3 className="text-2xl uppercase font-semibold text-green-500">
                   <a href={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />

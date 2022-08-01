@@ -38,17 +38,17 @@ export default function Example() {
       
 
       <main className="sm:relative ">
-        <div className="max-w-7xl w-full h-128 pb-24 sm:h-screen relative bg-white text-left lg:text-left">
+        <div className="max-w-7xl w-full h-128 pb-24 sm:h-screen relative bg-black text-left lg:text-left">
                  
           <div className="px-4 py-10 absolute sm:bottom-0 lg:w-3/5 sm:px-8 ">
-            <h1 className="tracking-tighter  sm:leading-[4.5rem] font-bold text-stone-800  sm:text-7xl text-5xl mb-8">
+            <h1 className="tracking-tighter  sm:leading-[4.5rem] font-bold text-white  sm:text-7xl text-5xl mb-8">
               <span className="xl:inline">Fighting the</span>{' '}
               <span className=" text-purple-600 block">wealth divide.</span>
             </h1>
-            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-stone-800 opacity-80 sm:text-lg  md:max-w-md">
+            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-white opacity-80 sm:text-lg  md:max-w-md">
               Since 1995, the top 1% have earned 20x more global wealth than the bottom 50%. 
             </p>
-            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-stone-800 opacity-80 sm:text-lg  md:max-w-md">
+            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-white opacity-80 sm:text-lg  md:max-w-md">
             We think that&apos;s a problem and we&apos;re on a mission to bring the asset management industry closer to normal people.
             </p>
             <div className=" justify-center w-full sm:mb-0 mb-24 sm:w-1/2">

@@ -15,6 +15,10 @@
   ```
 */
 import { StarIcon } from '@heroicons/react/solid'
+import Image from 'next/image'
+import tested from '../../public/images/verified.gif'
+import performance from '../../public/images/speedometer.gif'
+import bank from '../../public/images/bank.gif'
 
 const products = [
   {
@@ -23,7 +27,7 @@ const products = [
     price: 'All strategies made available by Nous or our fund partners are backtested and live-tested by Nous Systems prior to their release.',
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: tested,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +37,7 @@ const products = [
     price: 'Powered by Chainlink, Nous brings reporting data on-chain. Bringing much needed transparency to a historically opaque industry.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc: performance,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -43,7 +47,7 @@ const products = [
     price: 'Nous democratises institutional exchange access meaning lower fees and higher security for your funds. ',
     rating: 5,
     reviewCount: 14,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg',
+    imageSrc: bank,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -58,22 +62,25 @@ function classNames(...classes) {
 export default function Example() {
   return (
       
-    <div className="bg-white flex pt-8">
+    <div className="bg-white flex-col sm:flex-row flex pt-8">
        
-      <div className="w-full flex overflow-hidden">
+      <div className="w-full  overflow-hidden">
         <h2 className="sr-only">Products</h2>
 
-        <div className="-mx-px border-l border-gray-200 grid grid-cols-1 sm:grid-cols-3 sm:mx-0 ">
+        <div className="-mx-px border-l border-gray-200  grid grid-cols-1 sm:grid-cols-3 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 border-r border-b border-gray-200">
-              <div className="overflow-hidden  bg-gray-200 aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                <img
+            <div key={product.id} className="group pt-8 sm:pt-28 relative px-8 sm:border-r sm:border-t sm:border-b border-gray-200">
+              <div className="overflow-hidden  aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className=" object-center object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
+                  height={120}
+                  width={120}
                 />
+                </div>
               </div>
-              <div className="pt-10 pb-4 text-left">
+              <div className="pt-4 pb-4 text-left">
                 <h3 className="text-2xl uppercase font-semibold text-gray-900">
                   <a href={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />
@@ -87,7 +94,7 @@ export default function Example() {
           ))}
         </div>
       </div>
-      <div className="max-w-7xl w-1/3 flex mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div className="max-w-7xl sm:w-1/3  mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-left ">
           
           <p className="mt-1 ml-4  sm:ml-0 text-4xl font-extrabold uppercase  text-neutral-200 sm:text-5xl sm:tracking-tight lg:text-7xl">

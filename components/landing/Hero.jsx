@@ -107,7 +107,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <div className="relative w-full bg-white">
-      <Popover className="relative bg-white">
+      <Popover className="relative mx-auto bg-white">
       <div className="absolute inset-0  z-30 pointer-events-none" aria-hidden="true" />
       <div className="relative z-20">
         <div className="mx-auto flex justify-between items-center sm:my-0 my-4 ml-0 sm:ml-4 md:justify-start md:space-x-10">
@@ -280,7 +280,7 @@ export default function Example() {
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center uppercase justify-center px-4 py-4  border border-transparent shadow-sm text-base font-medium text-white bg-cyan-500 hover:bg-emerald-500"
+                className="ml-8 inline-flex items-center uppercase justify-center px-4 py-4  border border-transparent shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-green-500"
               >
                 Launch App
               </a>
@@ -381,8 +381,8 @@ export default function Example() {
       </Transition>
     </Popover>
 
-      <main className="sm:relative relative ">
-        <div className=" w-full h-screen bg-black  text-left lg:text-left">
+      <main className="sm:relative relative sm:ml-20  mx-auto ">
+        <div className=" w-full h-screen bg-white  text-left lg:text-left">
                  
           <div className="px-4 py-8 lg:w-1/2 sm:px-8 ">
             <div className="flex hidden sm:block float-left sm:float-right w-max mr-24 sm:mr-0 sm:ml-24 top-0 mb-6  px-2  py-2">
@@ -390,19 +390,20 @@ export default function Example() {
                 <Image height={60} width={60} src={nous}/>
             </div>
             <div className="flex  w-max  top-0 mb-6   py-2">
-                <h1 className="flex my-auto font-semibold uppercase mr-1 text-white text-xl " ><span className="text-neutral-500 mr-1">LIVE on </span> Polygon</h1> 
+                <h1 className="flex my-auto font-semibold uppercase mr-1 text-black text-xl " ><span className="text-neutral-500 mr-1">LIVE on </span> Polygon</h1> 
                 <div className="ml-2 mr-1 mt-2 ">
                 <Image className="" height={30} width={30} src={polygon}/>
                 </div>
                 
             </div>
-            <h1 className="tracking-tight uppercase leading-[5rem] sm:leading-[5.5rem] font-bold text-white text-7xl sm:text-8xl mb-8">
-              <span className="block xl:inline text-neutral-300">Invest with</span>{' '}
-              <span className="block  ">the best.</span>
+            <h1 className="tracking-tighter  leading-[4rem] sm:leading-[6.5rem] font-semibold text-black text-7xl sm:text-9xl mb-8">
+              <span className="block xl:inline truncate ">A new way</span>{' '}
+              <span className="block  text-green-500 ">to invest.</span>
+              <span className="inline  "></span>
      
             </h1>
-            <p className="mt-3 w-5/6 font-regular  text-xl text-white  sm:text-2xl md:mt-5 md:max-w-lg">
-              Access the <span className="text-green-500">best investment opportunities</span> in crypto, DeFi and Web3 from as little as $100.
+            <p className="mt-3 w-5/6 font-regular  text-xl text-black  sm:text-2xl md:mt-5 md:max-w-lg">
+              Browse, buy and trade <span className="text-green-500">digital investment contracts.</span> Nous is the world&apos;s first investment marketplace, built on web3.
             </p>
            
             <div className=" sm:flex sm:justify-start mt-24 sm:mt-40 mb-8 lg:justify-start">
@@ -417,7 +418,7 @@ export default function Example() {
               <div className="mt-3  sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="w-full flex items-center uppercase justify-center px-10 py-4 border border-transparent text-base font-medium  text-white border-1 border-white hover:bg-neutral-800 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center uppercase justify-center px-10 py-4 border border-transparent text-base font-medium  text-black border-1 border-black hover:bg-neutral-800 md:py-4 md:text-lg md:px-10"
                 >
                   Join Discord
                 </a>

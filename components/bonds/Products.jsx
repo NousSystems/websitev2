@@ -15,6 +15,9 @@
   ```
 */
 import { StarIcon } from '@heroicons/react/solid'
+import earn from '../../public/images/bar-chart.gif'
+import support from '../../public/images/rocket.gif'
+import Image from 'next/image'
 
 const products = [
   {
@@ -23,7 +26,7 @@ const products = [
     price: "Nous' debut bond offers a fixed yield of 23% APY. With a range of bond periods, from 3 months to 2 years, choose the bond that's right for you.",
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: earn,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +36,7 @@ const products = [
     price: 'Capital raised via bonds is used to grow Nous and develop new products and strategies. Yield generated from strategies is then returned to our investors.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+    imageSrc: support,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -48,7 +51,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
       
-    <div className="bg-black">
+    <div className="bg-white">
         <div className=" mx-auto bg-black py-16 px-4 sm:pt-24 sm:px-6 lg:px-8">
         <div className="text-left">
           
@@ -63,16 +66,19 @@ export default function Example() {
 
         <div className="-mx-px  grid grid-cols-1 sm:grid-cols-2 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 ">
-              <div className="overflow-hidden  bg-black aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                <img
+            <div key={product.id} className="group relative px-8 py-8">
+              <div className="overflow-hidden mx-auto  bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className="object-center mx-auto object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
+                  height={120}
+                  width={120}
                 />
+                </div>
               </div>
               <div className="pt-10 pb-4 text-left">
-                <h3 className="text-4xl uppercase font-semibold text-white">
+                <h3 className="text-4xl uppercase font-semibold text-black">
                   <a href={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}

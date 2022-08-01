@@ -34,25 +34,25 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="relative bg-gray-50">
+    <div className="relative bg-black mx-auto">
       
 
-      <main className="sm:relative ">
-        <div className="max-w-7xl w-full h-128 pb-24 sm:h-screen relative bg-white text-left lg:text-left">
+      <main className="sm:relative bg-black">
+        <div className="max-w-7xl sm:ml-20 w-full h-screen pb-24 sm:h-screen relative bg-black text-left lg:text-left">
                  
           <div className="px-4 py-10 absolute sm:bottom-0 lg:w-3/5 sm:px-8 ">
-            <h1 className="tracking-tighter  sm:leading-[4rem] font-bold text-stone-800  sm:text-7xl text-5xl mb-8">
+            <h1 className="tracking-tighter  sm:leading-[4rem] font-semibold text-neutral-200  sm:text-7xl text-7xl mb-8">
               <span className="xl:inline">A marketplace for</span>{' '}
               <span className=" text-cyan-500 inline">crypto investors.</span>
             </h1>
-            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-stone-800 opacity-80 sm:text-xl  md:max-w-xl">
+            <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-neutral-200 opacity-80 sm:text-xl  md:max-w-xl">
               Marketplaces bring greater equality and transparency to fragmented markets like crypto and DeFi. Explore the best opportunities in crypto.
             </p>
-            <div className=" justify-center w-full sm:mb-0 mb-24 sm:w-1/2">
+            <div className=" justify-center mt-24 w-full sm:mb-0 mb-24 sm:w-1/2">
               <div className="w-full">
                 <a
                   href="#"
-                  className="w-full mt-24 flex items-center justify-center sm:mt-4 py-4 border border-transparent text-base font-regular text-white bg-stone-800 hover:bg-blue-700  md:py-4 md:text-lg md:px-10"
+                  className="w-full   flex items-center justify-center sm:mt-4 py-4 border border-transparent text-base font-regular text-white bg-stone-800 hover:bg-blue-700  md:py-4 md:text-lg md:px-10"
                 >
                   BROWSE THE MARKET
                 </a>

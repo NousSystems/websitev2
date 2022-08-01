@@ -14,9 +14,10 @@
   }
   ```
 */
+import Image from 'next/image'
 import { SparklesIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
-
+import launch from '../../public/images/checklist.gif'
 const products = [
   {
     id: 1,
@@ -24,7 +25,7 @@ const products = [
     price: 'Do you run a web3 business, crypto project or company in need of funding? Find out how Bonds can help you take your business to the next level.',
     rating: 5,
     reviewCount: 38,
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+    imageSrc: launch,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -68,11 +69,14 @@ export default function Example() {
                 <p className="mt-4 mb-8 text-lg font-regular text-neutral-500">{product.price}</p>
               </div>
               <div className="overflow-hidden  bg-gray-200 aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                <img
+              <div className="object-center object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
+                  height={120}
+                  width={120}
                 />
+                </div>
               </div>
             </div>
             

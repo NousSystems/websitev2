@@ -15,7 +15,11 @@
   ```
 */
 import { StarIcon } from '@heroicons/react/solid'
-
+import Image from 'next/image'
+import connect from '../../public/images/wallet.gif'
+import browse from '../../public/images/book.gif'
+import select from '../../public/images/infography.gif'
+import mint from '../../public/images/diamond.gif'
 const products = [
   {
     id: 1,
@@ -23,7 +27,7 @@ const products = [
     price: "Exposure to crypto assets without the risk. Nous A1 arbitrages with stablecoins, exploiting funding rate dislocation across all major exchanges.",
     rating: 5,
     reviewCount: 38,
-    imageSrc: '',
+    imageSrc: connect,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -33,7 +37,7 @@ const products = [
     price: 'Nous A1 has been backtested over 2 years, undergone live testing and risk analysis. Download the full product prospectus below.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: '',
+    imageSrc: browse,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -43,7 +47,7 @@ const products = [
     price: "Exposure to crypto assets without the risk. Nous A1 arbitrages with stablecoins, exploiting funding rate dislocation across all major exchanges.",
     rating: 5,
     reviewCount: 38,
-    imageSrc: '',
+    imageSrc: select,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -53,7 +57,7 @@ const products = [
     price: 'Nous A1 has been backtested over 2 years, undergone live testing and risk analysis. Download the full product prospectus below.',
     rating: 5,
     reviewCount: 18,
-    imageSrc: '',
+    imageSrc: mint,
     imageAlt: 'TODO',
     href: '#',
   },
@@ -84,14 +88,17 @@ export default function Example() {
         <div className="-mx-px  grid grid-cols-1 sm:grid-cols-4 sm:mx-0 ">
           {products.map((product) => (
             <div key={product.id} className="group border-r border-b relative px-8 ">
-              <div className="overflow-hidden h-8 bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
-                {/* <img
+              <div className="overflow-hidden pt-4 bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className=" object-center object-contain">
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="w-full h-full object-center object-cover"
-                /> */}
+                  height={100}
+                  width={100}
+                />
+                </div>
               </div>
-              <div className="pt-10 pb-4 text-left">
+              <div className="pt-4 pb-4 text-left">
                 <h3 className="text-2xl uppercase font-semibold text-black">
                   <a href={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />

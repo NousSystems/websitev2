@@ -40,7 +40,7 @@ export default function Example() {
       <main className="sm:relative ">
         
         <div className="w-full h-2/3 flex flex-col sm:flex-row">
-        <div className="flex-1 w-full  ">
+        <div className="flex w-full  ">
         <div className="px-4 py-12 sm:py-16 lg:w-full sm:px-8 ">
             <h1 className="tracking-tight uppercase sm:leading-[6rem] mb-24 sm:mb-48 font-bold text-black text-7xl sm:text-8xl">
               Invest in <span className="block text-purple-500">Nous A1</span> 
@@ -59,12 +59,12 @@ export default function Example() {
             </div>
           </div>
         </div>
-            <div className="flex-1 w-full">
+            <div className="hidden sm:block w-full">
             <div className=" relative w-full h-full bg-gradient-radial from-purple-600 via-purple-700 to-purple-800 object-contain">
             
               <p className="text-xl font-medium uppercase leading-[1rem text-white p-8">Performance</p>
-              <p className="text-4xl font-regular uppercase text-center mt-20 leading-[1rem text-neutral-200">Current APY:</p>
-              <p className="text-9xl font-bold uppercase text-center  text-white ">23%</p>
+              <p className="text-4xl font-regular uppercase text-center mt-8 sm:mt-20  text-neutral-200">Current APY:</p>
+              <p className="text-5xl sm:text-9xl font-bold uppercase text-center  text-white ">23%</p>
               <p className="text-lg font-regular uppercase text-center  mt-2 text-neutral-200">* LAST UPDATED: 19.07.2022</p>
               <p className="text-xl text-right font-medium uppercase absolute bottom-0 right-0 mb-8 text-white px-8">Performance</p>
          

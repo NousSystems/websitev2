@@ -41,7 +41,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
       
-    <div className="bg-white flex ">
+    <div className="bg-white flex sm:flex-row flex-col ">
         <div className="max-w-7xl bg-white w-full flex mx-auto py-16 sm:py-24 ">
         <div className="text-left relative bottom-12 ">
           
@@ -56,9 +56,9 @@ export default function Example() {
 
         <div className=" bg-green-500 grid grid-cols-1 sm:grid-cols-1 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 grid grid-cols-2 ">
+            <div key={product.id} className="group relative px-8 grid sm:grid-cols-2 ">
               
-              <div className="pt-40 text-left">
+              <div className="pt-8 sm:pt-40 text-left">
                 <h3 className="text-4xl uppercase font-semibold text-white">
                   <a href={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />
@@ -74,7 +74,7 @@ export default function Example() {
                   alt={product.imageAlt}
                   className="w-full h-full object-center object-cover"
                 /> */}
-                <p className="pt-40 text-md font-regular text-neutral-100">{product.price}</p>
+                <p className="pt-8 sm:pt-40 text-md font-regular text-neutral-100">{product.price}</p>
                 <p className="mt-2 mb-8 text-md font-regular text-neutral-100">{product.description}</p>
               </div>
             </div>
