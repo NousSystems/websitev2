@@ -43,7 +43,7 @@ export default function Example() {
           <div className="px-4 py-10 absolute sm:bottom-0 lg:w-3/5 sm:px-8 ">
             <h1 className="tracking-tighter  sm:leading-[4.5rem] font-bold text-black sm:text-7xl text-5xl mb-8">
               <span className="xl:inline">Next-generation</span>{' '}
-              <span className=" text-green-500 inline">early-stage </span>
+              <span className=" text-green-500 block sm:inline">early-stage </span>
               <span className="block">investing.</span>
             </h1>
             <p className="mt-2 max-w-md font-regular text-lg tracking-tight text-stone-800 opacity-80 sm:text-xl  md:max-w-xl">
@@ -62,7 +62,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-128 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-128 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full object-cover">
           <Image

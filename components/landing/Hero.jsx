@@ -396,8 +396,8 @@ export default function Example() {
                 </div>
                 
             </div>
-            <h1 className="tracking-tighter  leading-[4rem] sm:leading-[6.5rem] font-semibold text-black text-7xl sm:text-9xl mb-8">
-              <span className="block xl:inline truncate ">A new way</span>{' '}
+            <h1 className="tracking-tighter  leading-[5rem] sm:leading-[6.5rem] font-semibold text-black text-7xl sm:text-9xl mb-8">
+              <span className="block xl:inline truncate  ">A new way</span>{' '}
               <span className="block  text-green-500 ">to invest.</span>
               <span className="inline  "></span>
      
@@ -426,7 +426,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-96 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-96 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full object-contain ">
           <Image

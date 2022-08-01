@@ -91,7 +91,7 @@ export default function Example() {
           
         </div>
         <div className="sm:w-1/2 w-full mt-8 mb-24  bg-white sm:mt-0 flex-1  h-full relative">
-        <Image src={tokenomics} layout="responsive" objectFit="contain"/>
+        {/* <Image src={tokenomics} layout="responsive" objectFit="contain"/> */}
         </div>
       </div>
       <div className="w-full overflow-hidden">

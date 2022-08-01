@@ -55,8 +55,8 @@ export default function Example() {
         <div className=" mx-auto bg-black py-16 px-4 sm:pt-24 sm:px-6 lg:px-8">
         <div className="text-left">
           
-          <p className="mt-1 ml-4  sm:ml-0 text-4xl font-extrabold tracking-tighter uppercase text-white sm:text-5xl sm:tracking-tight lg:text-8xl">
-            Introducing the Nous Bond. <span className="text-green-500 ">Earn 23% APY.</span>
+          <p className="mt-1 ml-4  sm:ml-0 text-5xl font-extrabold tracking-tighter uppercase text-white sm:text-5xl sm:tracking-tight lg:text-8xl">
+            Introducing the Nous Bond. <span className="text-cyan-500 block sm:inline ">Earn 23% APY.</span>
           </p>
           
         </div>
@@ -66,7 +66,7 @@ export default function Example() {
 
         <div className="-mx-px  grid grid-cols-1 sm:grid-cols-2 sm:mx-0 ">
           {products.map((product) => (
-            <div key={product.id} className="group relative px-8 py-8">
+            <div key={product.id} className="group relative px-8 py-4 sm:py-8">
               <div className="overflow-hidden mx-auto  bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
               <div className="object-center mx-auto object-contain">
                 <Image

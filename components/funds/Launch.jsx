@@ -41,7 +41,7 @@ function classNames(...classes) {
 export default function Example() {
   return (
       
-    <div className="bg-black flex ">
+    <div className="bg-black flex flex-col sm:flex-row ">
         <div className="max-w-7xl bg-black w-full flex mx-auto py-16 sm:py-24 ">
         <div className="text-left relative bottom-12 ">
           
@@ -52,7 +52,7 @@ export default function Example() {
               <div className="w-full">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center mt-4 py-4 border border-transparent text-base font-medium bg-white text-black   md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center mt-4 py-4 border border-transparent text-base font-medium bg-white text-black px-6  md:py-4 md:text-lg md:px-10"
                 >
                   ONBOARDING FORM
                 </a>

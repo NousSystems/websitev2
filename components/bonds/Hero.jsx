@@ -400,12 +400,12 @@ export default function Example() {
                 
             </div>
             <h1 className="tracking-tighter leading-[5.5rem] sm:leading-[6.5rem] font-bold text-white text-8xl sm:text-9xl mb-8">
-              <span className="block xl:inline">Bonds are </span>{' '}
-              <span className="block text-blue-500 "><span className="text-white">not </span>boring.</span>
+              <span className="block xl:inline">Bonds are not</span>{' '}
+              <span className="block text-cyan-500 "><span className="text-white"> </span>boring.</span>
      
             </h1>
             <p className="mt-3 max-w-md font-regular  text-lg text-neutral-100 opacity-80 sm:text-2xl md:mt-12 md:max-w-lg">
-              Browse a range of <span className="text-cyan-300">fixed yield investments</span> in crypto, DeFi and Web3 projects.
+              Browse a range of <span className="text-cyan-00">fixed yield investments</span> in crypto, DeFi and Web3 projects.
             </p>
            
             <div className=" sm:flex sm:justify-start  w-full lg:justify-start">
@@ -421,7 +421,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute p-16 inset-0 w-full h-full bg-black object-cover ">
            <div className="relative mt-24 p-60">

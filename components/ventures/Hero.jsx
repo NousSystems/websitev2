@@ -58,7 +58,7 @@ const solutions = [
     {
       name: 'Company',
       description: 'Find out more about the team building Nous.',
-      href: '#',
+      href: 'company',
       icon: CursorClickIcon,
     },
     { name: 'Docs', description: "Read our whitepaper and project documentation.", href: '#', icon: ShieldCheckIcon },
@@ -422,7 +422,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-screen sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full bg-cyan-400 toobject-cover ">
            <Image

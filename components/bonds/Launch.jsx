@@ -41,11 +41,11 @@ function classNames(...classes) {
 export default function Example() {
   return (
       
-    <div className="bg-white flex ">
+    <div className="bg-white flex flex-col sm:flex-row">
         <div className="max-w-7xl bg-green-500 w-full flex mx-auto py-16 sm:py-24 ">
         <div className="text-left ">
           
-          <p className="mt-1 ml-8  sm:ml-8 text-4xl font-semibold text-white sm:text-5xl sm:tracking-tight lg:text-7xl">
+          <p className="mt-1 ml-8  sm:ml-8 text-5xl font-semibold text-white sm:text-5xl tracking-tighter lg:text-7xl">
             Want to <span className="block">offer a bond?</span>
           </p>
           
@@ -58,18 +58,18 @@ export default function Example() {
           {products.map((product) => (
             <div key={product.id} className="group relative px-8 grid grid-cols-2 border-r border-b border-gray-200">
               
-              <div className="pt-40 text-left">
+              <div className="pt-8 sm:pt-40 text-left">
                 <h3 className="text-2xl uppercase font-semibold text-gray-900">
                   <a href={product.href}>
-                    <span aria-hidden="true" className="absolute inset-0" />
+                    <span aria-hidden="true" className="absolute  inset-0" />
                     {product.name}
                   </a>
                 </h3>
                 
-                <p className="mt-4 mb-8 text-lg font-regular text-neutral-500">{product.price}</p>
+                <p className="mt-4 mb-8 tex-sm sm:text-lg font-regular text-neutral-500">{product.price}</p>
               </div>
-              <div className="overflow-hidden  bg-gray-200 aspect-w-1 aspect-h-1 group-hover:opacity-75">
-              <div className="object-center object-contain">
+              <div className="overflow-hidden  bg-white aspect-w-1 aspect-h-1 group-hover:opacity-75">
+              <div className="object-center object-contain absolute bottom-8 right-8">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}

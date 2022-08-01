@@ -421,7 +421,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-96 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-96 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full bg-cyan-400 toobject-cover ">
            <Image

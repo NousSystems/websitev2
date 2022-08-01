@@ -38,10 +38,10 @@ export default function Example() {
       
 
       <main className="sm:relative bg-black">
-        <div className="max-w-7xl sm:ml-20 w-full h-screen pb-24 sm:h-screen relative bg-black text-left lg:text-left">
+        <div className="max-w-7xl sm:ml-20 w-full h-128 pb-24 sm:h-screen relative bg-black text-left lg:text-left">
                  
           <div className="px-4 py-10 absolute sm:bottom-0 lg:w-3/5 sm:px-8 ">
-            <h1 className="tracking-tighter  sm:leading-[4rem] font-semibold text-neutral-200  sm:text-7xl text-7xl mb-8">
+            <h1 className="tracking-tighter  sm:leading-[4rem] font-semibold text-neutral-200  sm:text-7xl text-6xl mb-8">
               <span className="xl:inline">A marketplace for</span>{' '}
               <span className=" text-cyan-500 inline">crypto investors.</span>
             </h1>
@@ -61,7 +61,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-128 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="hidden sm:block relative w-full h-128 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           
           <div className="absolute inset-0 w-full h-full object-cover">
           <Image
